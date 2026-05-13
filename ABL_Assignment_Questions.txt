@@ -1,0 +1,243 @@
+
+Progress 4GL / OpenEdge ABL Assignment Questions
+(Covers Sessions 1 to 4)
+
+==================================================
+Section 1 — Variables and Data Types
+==================================================
+
+Q1
+Write a program to:
+- Define variables for employee name, employee ID, salary, and joining date.
+- Assign values using ASSIGN.
+- Display all values properly formatted.
+
+Q2
+Create a program that:
+- Accepts two numbers
+- Displays:
+  - Sum
+  - Difference
+  - Product
+  - Division
+  - Remainder using MODULO
+
+Q3
+Write a program to:
+- Convert a string to uppercase
+- Convert another string to lowercase
+- Display string length using LENGTH
+
+Q4
+Write a program using:
+- SUBSTRING
+- TRIM
+- REPLACE
+
+Input:
+"  Progress 4GL Training  "
+
+Expected operations:
+- Remove spaces
+- Extract "Progress"
+- Replace "Training" with "Session"
+
+==================================================
+Section 2 — Conditional Statements and Loops
+==================================================
+
+Q5
+Write a program to check:
+- If marks >= 90 → Grade A
+- If marks >= 75 → Grade B
+- If marks >= 50 → Grade C
+- Else → Fail
+
+Use:
+- IF...THEN...ELSE
+
+Q6
+Rewrite Question 5 using:
+- CASE statement
+
+Q7
+Write a program to:
+- Display numbers from 1 to 20
+- Display only even numbers
+- Display multiplication table of 7
+
+Use:
+- DO WHILE
+- DO...TO...BY
+
+Q8
+Write a program to:
+- Display current date
+- Display current month
+- Display current year
+- Calculate age using birth year
+
+Use:
+- TODAY
+- DAY
+- MONTH
+- YEAR
+
+==================================================
+Section 3 — Procedures and Functions
+==================================================
+
+Q9
+Create:
+- One internal procedure named showWelcome
+- Display "Welcome to OpenEdge ABL"
+
+Call it using:
+RUN showWelcome.
+
+Q10
+Create a function:
+getSquare
+
+Input:
+- Integer number
+
+Output:
+- Square of the number
+
+Q11
+Write a procedure using:
+- INPUT parameter
+- OUTPUT parameter
+
+Scenario:
+- Pass salary
+- Return bonus amount
+
+Q12
+Create a persistent procedure:
+- Store handle in HANDLE variable
+- Run an internal procedure using:
+RUN procName IN hProc.
+- Delete procedure handle properly
+
+Q13
+Write a program using:
+- FORWARD declaration for function
+
+==================================================
+Section 4 — Database Access
+==================================================
+
+Q14
+Write a program using:
+FOR EACH Customer:
+
+Display:
+- Customer number
+- Name
+- Country
+
+Q15
+Write a program to:
+- Find a customer by CustNum
+- Display customer details
+
+Use:
+- FIND
+- NO-ERROR
+- AVAILABLE
+
+Q16
+Write a program to:
+- Create a new customer record
+- Assign values using ASSIGN
+
+Q17
+Write a program to:
+- Update customer balance
+- Use EXCLUSIVE-LOCK
+
+Q18
+Write a program to:
+- Delete a customer record safely
+
+==================================================
+Section 5 — Buffers and Error Handling
+==================================================
+
+Q19
+Create a custom buffer:
+DEFINE BUFFER bCust FOR Customer.
+
+Display records using the buffer.
+
+Q20
+Write a program using:
+- Two buffers for same table
+
+Scenario:
+- Compare two customer balances
+
+Q21
+Write a program demonstrating:
+- ERROR-STATUS
+- GET-MESSAGE
+
+Example:
+- Search for invalid customer number
+- Display error message
+
+Q22
+Write a program using:
+- NO-ERROR
+- AVAILABLE
+
+Explain the difference between both.
+
+==================================================
+Mini Project Assignment
+==================================================
+
+Employee Management System
+
+Features:
+- Add Employee
+- Display Employee
+- Search Employee
+- Update Salary
+- Delete Employee
+
+Mandatory Concepts:
+- Variables
+- Procedures
+- Functions
+- Loops
+- Conditions
+- FOR EACH
+- FIND
+- Buffers
+- Error Handling
+- NO-LOCK / EXCLUSIVE-LOCK
+
+==================================================
+Bonus Questions
+==================================================
+
+Q23
+What is the difference between:
+- Procedure
+- Function
+
+Q24
+What is the purpose of:
+- NO-UNDO
+- NO-LOCK
+- NO-ERROR
+
+Q25
+Explain:
+- Default buffer
+- Named buffer
+- Persistent procedure
+- HANDLE variable
